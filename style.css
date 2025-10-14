@@ -1,0 +1,140 @@
+body {
+    background-color: #EFEDE9;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+
+    /* 預留空間，避免導覽列擋住內容 */
+    padding-top: 110px;   /* 和 .menu 的高度一樣 */
+}
+
+.menu {
+    width: 100%;
+    height: 110px;
+    background-color: #FFFFFF;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    /* 固定在頁面最上方 */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* 陰影讓導覽列更明顯 */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+
+    z-index: 1000;  /* 保證在最上層 */
+}
+
+.menu a, .menu span {
+    text-decoration: none;
+}
+
+.menu_botton {
+    font-size: 16pt;
+    line-height: 30px;
+    color: #000035;
+    background-color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 20px;        
+    padding: 10px 15px;   
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu_botton:hover {
+    background-color: #ddd;
+}
+
+.active {
+    background-color: #ccc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 13pt;
+    line-height: 25px;
+    color: #000035;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 原本的內容樣式 */
+.home_content {
+    display: flex;
+}
+
+.aboutMe {
+    width: 55%;
+}
+
+.title1 {
+    font-size: 350%;
+    color: #000035;
+    padding-top: 25%;
+    padding-left: 20%;
+}
+
+.name {
+    font-size: 200%;
+    color: #000035;
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.name_content {
+    font-size: 120%;
+    color: #000035;
+    padding-top: 3%;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+
+.home_photo {
+    width: 35%;
+    height: 30%;
+    padding-top: 8%;
+    padding-left: 10%;
+}
+
+.aboutWeb_content {
+    width: auto;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.aboutWeb_photo {
+    width: auto;
+    display: block;
+}
