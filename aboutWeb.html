@@ -3,26 +3,32 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <meta charset="utf-8"/>
-    <title>About this website</title>
+    <title data-en="About this website" data-tw="關於此網站">About this website</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
     <div class="menu">
-        <a class="menu_botton" href="home.html">Home</a>
-        <a class="menu_botton active" href="aboutWeb.html">About this website</a>
+        <a class="menu_botton" href="home.html" data-en="Home" data-tw="首頁">Home</a>
+        <a class="menu_botton" href="aboutWeb.html" data-en="About this website" data-tw="關於此網站">About this website</a>
+
         <div class="dropdown">
-            <span class="menu_botton">Projects in college</span>
+            <span class="menu_botton active" data-en="Projects in college" data-tw="大學專案">Projects in college</span>
             <div class="dropdown-content">
-                <a href="classProjects.html">Class projects</a>
-                <a href="sideProjects.html">Side projects</a>
+                <a class="active" href="classProjects.html" data-en="Class projects" data-tw="課堂專案">Class projects</a>
+                <a href="sideProjects.html" data-en="Side projects" data-tw="Side Project">Side projects</a>
             </div>
         </div>
-        <a class="menu_botton" href="resume.html">Resume</a>
+
+        <a class="menu_botton" href="resume.html" data-en="Resume" data-tw="履歷">Resume</a>
+
+        <!-- 語言切換按鈕 -->
+        <button id="lang-btn" class="menu_botton">EN / 中文</button>
     </div>
 
     <div class="aboutWeb_content">
         <img src="images/web_design1.jpeg" class="aboutWeb_photo"/>
         <img src="images/web_design2.jpeg" class="aboutWeb_photo"/>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
