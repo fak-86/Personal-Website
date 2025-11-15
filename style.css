@@ -138,3 +138,64 @@ body {
     width: auto;
     display: block;
 }
+
+
+/* Project List Page Wrapper */
+.projects_wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.projects_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.project_row {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.project_row:hover {
+    background: #f9f9f9;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.project_text h2 {
+    margin: 0 0 5px;
+}
+
+.project_text p {
+    margin: 0;
+    color: #555;
+}
+
+.learn_more_btn {
+    padding: 10px 16px;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.learn_more_btn:hover {
+    background: #555;
+}
+
+@media (max-width: 600px) {
+    .project_row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
