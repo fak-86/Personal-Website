@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <title data-en="Home" data-tw="首頁">Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <div class="menu">
+        <a class="menu_botton active" href="home.html" data-en="Home" data-tw="首頁">Home</a>
+        <a class="menu_botton" href="aboutWeb.html" data-en="About this website" data-tw="關於此網站">About this website</a>
+
+        <div class="dropdown">
+            <span class="menu_botton" data-en="Projects in college" data-tw="大學專案">Projects in college</span>
+            <div class="dropdown-content">
+                <a href="classProjects.html" data-en="Class projects" data-tw="課堂專案">Class projects</a>
+                <a href="sideProjects.html" data-en="Side projects" data-tw="Side Project">Side projects</a>
+            </div>
+        </div>
+
+        <a class="menu_botton" href="resume.html" data-en="Resume" data-tw="履歷">Resume</a>
+
+        <!-- 語言切換按鈕 -->
+        <button id="lang-btn" class="menu_botton">EN / 中文</button>
+    </div>
+
+    <!-- 內容 -->
+    <div class="home_content">
+        <div class="aboutMe">
+            <div class="title1" data-en="About Me" data-tw="關於我">About Me</div>
+            <div class="name" data-en="Alyson Wu" data-tw="吳舒萍">Alyson Wu</div>
+
+            <div class="name_content" 
+                 data-en="I'm a college student majoring in computer science. This website records my journey in CSIE."
+                 data-tw="我是一位資工系大學生，這個網站紀錄了我在資工領域的學習旅程。">
+                I'm a college student majoring in computer science. This website records my journey in CSIE.
+            </div>
+        </div>
+
+        <img src="images/home_photo.png" class="home_photo"/>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
